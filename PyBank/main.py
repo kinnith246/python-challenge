@@ -47,13 +47,13 @@ def budget_analysis(budget_path):
 
     # generate the summary of the analysis
     summary_text = (
-        "Financial Analysis"
-        "----------------------------"
-        f"Total Months: {total_months}"
-        f"Total: ${total_profit_losses:,.0f}"
-        f"Average Change: ${average_change:,.2f}"
-        f"Greatest Increase in Profits: {max_change_date} (${max_change:,.0f})"
-        f"Greatest Decrease in Profits: {min_change_date} (${min_change:,.0f})"
+        "Financial Analysis\n"
+        "----------------------------\n"
+        f"Total Months: {total_months}\n"
+        f"Total: ${total_profit_losses:,.0f}\n"
+        f"Average Change: ${average_change:,.2f}\n"
+        f"Greatest Increase in Profits: {max_change_date} (${max_change:,.0f})\n"
+        f"Greatest Decrease in Profits: {min_change_date} (${min_change:,.0f})\n"
 
     )
     return summary_text
