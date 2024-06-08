@@ -59,22 +59,22 @@ def budget_analysis(budget_path):
     return summary_text
 
 def main():
-    # Path to the directory and file
+    # path to the directory and file
     output_dir = 'Analysis'
     output_file = 'budget_analysis.txt'
     analysis_path = os.path.join(output_dir, output_file)
     
-    # Ensure the directory exists
+    # ensure the directory exists
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
-    # Perform the analysis
+    # perform the analysis
     results = budget_analysis(budget_path)
     
-    # Print results to the terminal
+    # print results to the terminal
     print(results)
     
-    # Save the results to a text file in the Analysis folder
+    # save the results to a text file in the Analysis folder
     with open(analysis_path, 'w') as file:
         file.write(results)
         
